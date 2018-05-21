@@ -21,8 +21,7 @@ end
 def selects_most_prominent_color_and_returns_with_count
   "SELECT MAX(counted) FROM (
     SELECT color, COUNT(*) as counted
-    FROM bears 
-    GROUP BY color)"
+    FROM bears)"
 end
 
 def counts_number_of_bears_with_goofy_temperaments
